@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Membuat judul di tab browser -->
+  <title>Kalkulator BMI By Wildan Ade W</title>
+  <!-- Menghubungkan ke file style.css di folder css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container" id="input-section">
+    <!-- Membuat judul aplikasi -->
+    <h1>Kalkulator BMI</h1>
+    <!-- Membuat deskripsi aplikasi -->
+    <p class="website-description">Hitung Indeks Massa Tubuh (BMI) Anda dengan kalkulator BMI yang sederhana dan mudah digunakan ini. Dapatkan hasil BMI Anda dan pahami status berat badan Anda.</p>
+    <!-- Membuat input untuk berat, tinggi, jenis kelamin, hitung BMI dan Reset -->
+    <div class="input-section">
+      <label for="weight">Berat badan (kg):</label>
+      <input type="number" id="weight" required>
+
+      <label for="height">Tinggi badan (cm):</label>
+      <input type="number" id="height" required>
+
+      <label for="age">Umur :</label>
+      <input type="number" id="age" required>
+
+      <label for="gender">Jenis Kelamin:</label>
+      <select id="gender" required>
+        <option value="">Pilih</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Wanita">Wanita</option>
+      </select>
+
+      <button class="rounded-btn-blue" style="margin-bottom: 15px; margin-top: 15px;" onclick="calculateBMI()">Hitung BMI</button>
+      <button class="rounded-btn-red" onclick="resetForm()">Reset</button>
+    </div>
+  </div>
+
+  <!-- Menampilkan hasil dari hitung BMI -->
+  <div class="container" id="result-section" style="display: none;">
+    <h1>Hasil Kalkulasi BMI</h1>
+    <hr>
+    <div class="result-container">
+      <!-- Menampilkan jenis kelamin yang dipilih -->
+      <p id="genderMessage"></p>
+      <!-- Menampilkan hasil BMI disertai hasil, gambar dan penjelasan -->
+      <h2 id="bmiResult"></h2>
+      <p>Berikut cara untuk menghitung BMI</p>
+      <img src="https://i.imgur.com/aMboXOp.jpeg" alt="sample-image" class="sample-image">
+      <p id="bmiExplanation"></p>
+    </div>
+    <!-- Menampilkan tombol untuk kembali ke halaman hitung BMI -->
+    <button class="rounded-btn-blue" onclick="goBack()">Kembali Hitung BMI</button>
+  </div>
+  <!-- Menghubungkan ke file script.js di folder js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

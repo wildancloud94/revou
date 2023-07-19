@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Membuat background website menjadi gradient hijau */
+body {
+  background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+}
+
+/* Mensetting tampilan form seperti ukuran, batas tepi, warna latar belakang transparan, efek bayangan serta sudut form rounded */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Pengaturan untuk teks h1 */
+h1 {
+  text-align: center;
+  color: #000;
+}
+
+/* Pengaturan untuk deskripsi web dibawah judul */
+.website-description {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+select {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Pengaturan tampilan pada tombol hitung BMI dan kembali ke hitung BMI */
+.rounded-btn-blue {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px; /* Rounded button */
+  transition: background-color 0.3s;
+}
+
+/* Pengaturan tampilan tombol berubah warna menjadi biru yang lebih jelas ketika di pilih */
+.rounded-btn-blue:hover {
+  background-color: #0056b3;
+}
+
+/* Pengaturan tampilan pada tombol Reset */
+.rounded-btn-red {
+  padding: 10px 20px;
+  background-color: #f34c32;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px; /* Rounded button */
+  transition: background-color 0.3s;
+}
+
+/* Pengaturan tampilan tombol berubah warna menjadi merah yang lebih jelas ketika di pilih */
+.rounded-btn-red:hover {
+  background-color: #ff2200;
+}
+
+/* Pengaturan tampilan gambar pada hasil hitung BMI */
+.sample-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 15px;
+}
+
+.result-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Pengaturan tampilan hasil */
+#result-section {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
